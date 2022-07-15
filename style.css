@@ -1,0 +1,145 @@
+/* FONTS */
+@font-face {
+  font-family: "Red Had Display";
+  src: url(../../../Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Red Had Display";
+  src: url(../../../Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Red Had Display";
+  src: url(../../../Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+  font-weight: 900;
+}
+
+/* CUSTOM PROPERTIES */
+:root{
+/* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --saturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 100%, 100%);
+
+  --bright-blue-hover: hsl(245, 58%, 68%);
+}
+
+/* BASIC RESET */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: "Red Had Display";
+  background-color: var(--pale-blue);
+}
+ul{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+}
+/* REUSABLE CLASSES */
+/* notting here */
+
+/* GLOBAL STYLES */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card{
+  background-color: var(--white);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 32rem;
+}
+.card-content{
+  padding: 2rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+}
+.card-content h1{
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+.card-content p{
+  margin: 0 auto;
+  width: 248px;
+  color: var(--saturated-blue);
+  line-height: 1.8;
+  font-size: 1.5rem;
+  margin-block: 2rem;
+  font-weight: 500;
+}
+.card-plan{
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  margin-block: 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-plan ul{
+  margin-right: 20px;
+}
+.card-plan ul li{
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.card-plan .text{
+  font-weight: 900;
+}
+.card-plan .price{
+  color: var(--saturated-blue);
+  font-weight: 500;
+}
+.card-plan a{
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--bright-blue);
+  text-decoration: underline;
+}
+.card-plan a:hover{
+  text-decoration: none;
+  color: var(--bright-blue-hover);
+}
+.btn{
+  display: block;
+  margin-block: 1rem;
+  padding: 1.4rem 0;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 10px 20px 10px hsla(245, 75%, 52%, .15);
+}
+.pay{
+  background-color: var(--bright-blue);
+  color: var(--white);
+
+  transition: background-color 250ms;
+}
+.pay:hover{
+  background-color: var(--bright-blue-hover);
+}
+.cancel{
+  color: var(--saturated-blue);
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-block: 2rem 1rem;
+  display: block;
+}
