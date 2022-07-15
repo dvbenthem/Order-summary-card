@@ -1,5 +1,5 @@
 /* FONTS */
-@font-face {
+/* @font-face {
   font-family: "Red Had Display";
   src: url(../../../Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
   font-weight: 500;
@@ -13,7 +13,7 @@
   font-family: "Red Had Display";
   src: url(../../../Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
   font-weight: 900;
-}
+} */
 
 /* CUSTOM PROPERTIES */
 :root{
